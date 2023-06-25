@@ -27,8 +27,8 @@ body {
 }
 
 section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 h4 {
   font-family: "Gilroy", sans-serif;
@@ -229,19 +229,20 @@ h2 {
 }
 
 .grid-col-2 {
-  display: grid;
-  grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-col-3 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
 
 .grid-col-4 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
 
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -279,13 +280,13 @@ h2 {
 }
 
 .rate-card-header {
-  width: 576px;
-  margin-left: 290px;
-  margin-top: 42px;
-  margin-bottom: 42px;
-  height: 120px;
-  text-align: center;
+    max-width: 576px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    height: 120px;
+    text-align: center;
 }
+
 
 .white-background {
   margin-top: 42px;
@@ -302,12 +303,14 @@ h2 {
   justify-content: center;
 }
 .rate-card-price {
-  display: flex;
-  width: 1088px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+    display: flex;
+    max-width: 1088px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
+
+
 .basic {
   border-radius: 12px;
   padding-top: 20px;
@@ -449,15 +452,17 @@ h2 {
 }
 
 .form {
-  margin-top: 50px;
-  margin-bottom: 42px;
-  width: 1149px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*background: url(/Assets/Images/background\ L.svg) bottom right ,url(/Assets/Images/background\ R.svg) bottom left no-repeat,linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);*/
-  padding: 40px 0;
+    margin-top: 50px;
+    margin-bottom: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Assets/Images/background\ L.svg) no-repeat,url(/Assets/Images/background\ R.svg) no-repeat,linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    background-position: 0 100%, 100% 54%;
+    padding: 60px 0;
 }
+
 .input-1 {
   width: 405px;
   height: 55px;
@@ -540,27 +545,29 @@ h2 {
   padding-bottom: 10px;
   align-items: center;
 }
-
 .revolution {
-  width: 1000px;
-  height: 299px;
-  /* background-image: url(/Assets/Images/revo-bkg-l.svg );*/
+    width: 100%;
+    height: 299px;
+    background-image: url(/Assets/Images/revo-bkg-l.svg),linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    background-color: #1f3449;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 .revolution-md {
-  width: 806px;
-  height: 137px;
-  margin-left: 200px;
-  text-align: center;
+    text-align: center;
 }
+
 .revolution-title {
-  font-family: "Gilroy";
-  font-weight: bold;
-  width: 806px;
-  height: auto;
-  font-size: 40px;
-  margin-top: 50px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    height: auto;
+    font-size: 40px;
+    margin-top: 50px;
+    color: #ffffff;
 }
+
 
 .footer-h4 {
   font-family: "Gilroy";
